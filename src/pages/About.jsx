@@ -1,8 +1,8 @@
+import Landscape from "../components/Landscape"
+
 function About() {
     return (
-      <div>
-        <h1>ABOUT</h1>
-      </div>
+      <Landscape />
     )
   }
   

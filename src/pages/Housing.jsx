@@ -1,7 +1,7 @@
 function Housing() {
     return (
       <div>
-        <h1>ABOUT</h1>
+        <h1>LOGEMENTS</h1>
       </div>
     )
   }

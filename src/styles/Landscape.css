@@ -1,0 +1,9 @@
+.landscape {
+    margin: 3px 100px 0 100px;
+    border-radius: 25px;
+    height: 223px;
+    background-image: url(../assets/landscape.jpg);
+    background-size: cover;
+    background-position: center;
+    filter : brightness(60%);
+}

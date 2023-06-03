@@ -1,0 +1,30 @@
+.banner {
+    position: relative;
+    margin: 23px 100px 0 100px;
+    border-radius: 25px;
+}
+
+.banner-image {
+    position: absolute;
+    background-image: url('../assets/banner-image.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    filter : brightness(60%);
+    z-index: -1;
+    border-radius: 25px;
+}
+
+.catch-phrase {
+    text-align: center;
+    margin: 0;
+    padding: 78px 10%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 142.6%;
+    color: white;
+}

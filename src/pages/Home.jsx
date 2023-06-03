@@ -1,9 +1,10 @@
 import '../styles/Home.css';
+import Banner from "../components/Banner";
 
 function Home() {
   return (
     <div className="App">
-      <h1>ACCUEIL</h1>
+      <Banner />
     </div>
   );
 }

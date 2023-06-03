@@ -5,10 +5,10 @@ import '../styles/Header.css';
 function Header() {
   return (
     <header className='header-global'>
-      <img src={LogoKasa} alt='Logo Kasa' height={63} width={210}/>
-      <nav>
-          <Link to="/">Accueil</Link>
-          <Link to="/about">A Propos</Link>
+      <img className='header-logo' src={LogoKasa} alt='Logo Kasa' height={63} width={210}/>
+      <nav className='header-nav'>
+          <Link to="/" className='header-link'>Accueil</Link>
+          <Link to="/about" className='header-link'>A Propos</Link>
       </nav>
     </header>
   )
