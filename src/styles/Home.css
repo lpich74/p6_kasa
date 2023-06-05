@@ -8,3 +8,12 @@
   flex-wrap: wrap;
   row-gap: 50px;
 }
+
+.card {
+  background: linear-gradient(180deg, #FF6060 0%, rgba(0, 0, 0, 0.5) 100%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 27%;
+}

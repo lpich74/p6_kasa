@@ -1,12 +1,17 @@
 .card {
     background: linear-gradient(180deg, #FF6060 0%, rgba(0, 0, 0, 0.5) 100%);
     border-radius: 10px;
-    width: 28%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 27%;
 }
 
 .card-image {
-    background-size: cover;
-    background-position: center;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
 }
 
 .card-title {
@@ -16,8 +21,10 @@
     font-size: 18px;
     line-height: 142.6%;
     color: white;
-    margin: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+    margin: 20px 0 0 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
