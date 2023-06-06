@@ -2,7 +2,7 @@ import '../styles/Home.css';
 import Banner from "../components/Banner";
 import Card from '../components/Card';
 import { housingProfiles } from '../datas/logements'
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -10,11 +10,12 @@ function Home() {
       <Banner />
       <section className='cards-wrapper'>
         {housingProfiles.map((housing) => (
+          <Link className='card' key={`${housing.title}-${housing.id}`} to={`/housing/${housing.id}`}>
             <Card
-              key={`${housing.title}-${housing.id}`}
-              cover={housing.cover}
-              title={housing.title}
+                cover={housing.cover}
+                title={housing.title}
             />
+          </Link>
         ))}
       </section>
     </div>
@@ -22,11 +23,3 @@ function Home() {
 }
 
 export default Home;
-
-/* partie de code à changer :
-<Link key={`${housing.title}-${housing.id}`} to={`/housing/${housing.id}`}>
-<Card
-  cover={housing.cover}
-  title={housing.title}
-/>
-</Link> */
