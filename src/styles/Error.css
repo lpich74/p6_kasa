@@ -4,13 +4,12 @@
     justify-content: center;
     align-items: center;
     color: #FF6060;
-    margin-top: 134px;
-    margin-bottom: 159px;
+    margin: 104px 100px 139px 100px;
 }
 
 .error-main {
     text-align: center;
-    margin-bottom: 182px;
+    margin-bottom: 139px;
 }
 
 .error-404 {
@@ -40,4 +39,33 @@
     color: #FF6060;
     text-decoration-line: underline;
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .error-global {
+        margin: 97px 20px 113px 20px;
+    }
+
+    .error-main {
+        text-align: center;
+        margin-bottom: 113px;
+    }
+
+    .error-404 {
+        margin-top: 0;
+        margin-bottom: 113px;
+        font-size: 96px;
+    }
+
+    .error-message {
+        font-size: 18px;
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+        padding: 0 37.5px;
+    }
+
+    .error-back {
+        font-size: 14px;
+    }
 }
