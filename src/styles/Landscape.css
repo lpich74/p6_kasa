@@ -7,3 +7,11 @@
     background-position: center;
     filter : brightness(60%);
 }
+
+@media screen and (max-width: 768px) {
+    .landscape {
+        margin: 3px 19px 19px 19px;
+        border-radius: 10px;
+        height: 223px;
+    }
+}
