@@ -29,7 +29,7 @@
     color: white;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
     .banner {
         margin: 11px 20px 0px 20px;
         border-radius: 10px;

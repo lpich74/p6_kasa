@@ -1,18 +1,34 @@
 .card {
-    background: linear-gradient(180deg, #FF6060 0%, rgba(0, 0, 0, 0.5) 100%);
+    position: relative;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    width: 26%;
+    min-width: 180px;
+    width: 29%;
     text-decoration: none;
+    aspect-ratio: 1;
 }
 
 .card-image {
+    position: absolute;
     border-radius: 10px;
-    object-fit: cover;
+    height: 100%;
     width: 100%;
-    height: 150px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.card-image-background {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    border-radius: 10px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .card-title {
@@ -22,7 +38,7 @@
     font-size: 18px;
     line-height: 142.6%;
     color: white;
-    margin: 20px 0 0 0;
+    margin: 20px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
@@ -30,8 +46,13 @@
     text-overflow: ellipsis;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
     .card {
-        width: auto;
+        width: 100%;
+        aspect-ratio: 2;
+    }
+
+    .card-title {
+        margin-bottom: 15px;
     }
 }

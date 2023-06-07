@@ -27,7 +27,7 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
     .header-global {
         padding-left: 20px;
         padding-right: 20px;

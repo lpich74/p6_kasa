@@ -8,7 +8,7 @@
     filter : brightness(60%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
     .landscape {
         margin: 3px 19px 19px 19px;
         border-radius: 10px;

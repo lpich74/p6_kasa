@@ -20,7 +20,7 @@
     margin-bottom: 29px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
     .footer-logo {
         margin: 66px 0px 15px 0px;
         height: 36px;
