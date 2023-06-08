@@ -29,6 +29,16 @@
     color: white;
 }
 
+.landscape {
+    margin: 3px 100px 0 100px;
+    border-radius: 25px;
+    height: 223px;
+    background-image: url(../assets/landscape.jpg);
+    background-size: cover;
+    background-position: center;
+    filter : brightness(60%);
+}
+
 @media screen and (max-width: 375px) {
     .banner {
         margin: 11px 20px 0px 20px;
@@ -44,5 +54,11 @@
         padding: 31px 102px 32px 16px;
         font-size: 24px;
         line-height: 100%;
+    }
+
+    .landscape {
+        margin: 3px 19px 19px 19px;
+        border-radius: 10px;
+        height: 223px;
     }
 }

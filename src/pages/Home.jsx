@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 function Home() {
   return (
     <div className="App">
-      <Banner />
+      <Banner isHomePage={true} />
       <section className='cards-wrapper'>
         {housingProfiles.map((housing) => (
           <Link className='card' key={`${housing.id}`} to={`/housing/${housing.id}`}>
