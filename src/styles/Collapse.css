@@ -32,3 +32,24 @@
     margin: 0;
     padding: 20px;
 }
+
+@media screen and (max-width: 375px) {
+    .collapse {
+        margin-bottom: 20px;
+    }
+
+    .collapse-title {
+        color: white;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 142.6%;
+        margin: 0;
+        padding: 10px 0px 10px 10px;
+    }
+
+    .collapse-text {
+        font-size: 13px;
+    }
+}

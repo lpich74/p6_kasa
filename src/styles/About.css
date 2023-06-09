@@ -2,3 +2,10 @@
     margin: 38px 100px;
     padding: 0 10%;
 }
+
+@media screen and (max-width: 375px) {
+    .collapse-set {
+        margin: 19px;
+        padding: 0;
+    }
+}
