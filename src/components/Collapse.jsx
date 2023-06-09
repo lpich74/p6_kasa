@@ -2,7 +2,7 @@ import '../styles/Collapse.css';
 import { useState } from 'react'
 
 function Collapse({title, content}) {
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(true)
 
     const toggleCollapse = () => {
         setIsOpen(!isOpen);
@@ -12,7 +12,9 @@ function Collapse({title, content}) {
         <div className="collapse">
             <div className="collapse-header" onClick={toggleCollapse}>
                 <h2 className='collapse-title'>{title}</h2>
-                <button>{isOpen ? '⌄' : '^'}</button>
+                <div className='collapse-vector' style={!isOpen ? { transform: 'rotate(-180deg)' } : {}}>
+                    <i className='fa-solid fa-chevron-up'></i>
+                </div>
             </div>
             {!isOpen && (
                 <div className="collapse-content">
