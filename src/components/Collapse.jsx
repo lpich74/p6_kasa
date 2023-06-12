@@ -10,9 +10,9 @@ function Collapse({title, content}) {
 
     return (
         <div className="collapse">
-            <div className="collapse-header" onClick={toggleCollapse}>
+            <div className="collapse-header">
                 <h2 className='collapse-title'>{title}</h2>
-                <div className='collapse-vector' style={!isOpen ? { transform: 'rotate(-180deg)' } : {}}>
+                <div className='collapse-vector' onClick={toggleCollapse} style={!isOpen ? { transform: 'rotate(-180deg)' } : {}}>
                     <i className='fa-solid fa-chevron-up'></i>
                 </div>
             </div>
