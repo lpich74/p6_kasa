@@ -42,7 +42,13 @@ function Housing() {
           />
           <Collapse
             title="Équipements"
-            content={housing.equipments}
+            content={
+              <ul className='equipments-list'>
+                {housing.equipments.map((equipment, index) => (
+                  <li className='equipment' key={index}>{equipment}</li>
+                ))}
+              </ul>
+            }
           />
       </div>
     </div>

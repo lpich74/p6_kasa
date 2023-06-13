@@ -16,6 +16,10 @@
     gap: 57px;
 }
 
+.header-nav .active {
+    text-decoration: underline;
+}
+
 .header-link {
     font-family: 'Montserrat';
     font-style: normal;
