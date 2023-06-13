@@ -2,14 +2,14 @@ import '../styles/Stars.css';
 
 function Stars({rating}) {
     const stars = [];
-    const fullStar = <i class="fa-solid fa-star" style={{color:'#FF6060'}}></i>
-    const emptyStar = <i class="fa-solid fa-star" style={{color:'#E3E3E3'}}></i>
+    const fullStar = <i className="fa-solid fa-star" style={{color:'#FF6060'}}></i>
+    const emptyStar = <i className="fa-solid fa-star" style={{color:'#E3E3E3'}}></i>
 
     for (let i = 0; i < 5; i++) {
         if (i < rating) {
-          stars.push(fullStar);
+          stars.push(<span key={i}>{fullStar}</span>);
         } else {
-          stars.push(emptyStar);
+          stars.push(<span key={i}>{emptyStar}</span>);
         }
       }
     

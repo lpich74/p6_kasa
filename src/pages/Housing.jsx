@@ -1,5 +1,5 @@
 import '../styles/Housing.css'
-import { Link } from 'react-router-dom'
+import { Navigate } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 import { housingProfiles } from '../datas/logements'
 import Tags from '../components/Tags'
@@ -13,7 +13,7 @@ function Housing() {
 
   if (!housing) {
     return (
-      <Link to={`*`} />
+      <Navigate to='/404' />
     )
   }
 
@@ -38,7 +38,9 @@ function Housing() {
       <div className='collapses-housing'>
           <Collapse
             title="Description"
-            content={housing.description}
+            content={
+              <p className='housing-description'>{housing.description}</p>
+            }
           />
           <Collapse
             title="Équipements"

@@ -90,7 +90,8 @@
     overflow: auto;
 }
 
-.housing-collapse-text {
+.equipments-list {
+    list-style: none;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -100,12 +101,6 @@
     margin: 0;
     padding: 20px;
     overflow: auto;
-}
-
-.equipments-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
 }
 
 @media screen and (max-width: 375px) {
@@ -161,7 +156,7 @@
         padding: 13px 20px 20px 20px;
     }
 
-    .housing-collapse-text {
+    .equipments-list {
         font-weight: 400;
         font-size: 12px;
         padding: 13px 20px 20px 20px;

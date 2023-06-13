@@ -35,7 +35,7 @@ function Collapse({title, content, isAboutPage}) {
             </div>
             {!isOpen && (
                 <div className="housing-collapse-content">
-                    <p className='housing-collapse-text'>{content}</p>
+                    {content}
                 </div>
             )}
         </div>
