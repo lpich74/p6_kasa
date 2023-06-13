@@ -1,3 +1,64 @@
+.housing-wrapper {
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.housing-datas {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.housing-titles-tags {
+    display: flex;
+    flex-direction: column;
+}
+
+.housing-title {
+    margin: 6px 0 0 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+    color: #FF6060;
+}
+
+.housing-location {
+    margin: 0 0 20px 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    color: #FF6060;
+}
+
+.host-box {
+    display: flex;
+    gap: 2%;
+}
+
+.host-name {
+    display: flex;
+    text-align: right;
+    align-items: center;
+    width: 93px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    color: #FF6060;
+}
+
+.host-pic {
+    border-radius: 100%;
+    object-fit: cover;
+}
+
 .collapses-housing {
     display: flex;
+    justify-content: space-between;
 }
