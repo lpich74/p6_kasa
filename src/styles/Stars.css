@@ -1,0 +1,24 @@
+.starbox {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 27px;
+    gap: 10%;
+}
+
+.fa-solid {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 375px) {
+    .starbox {
+        width: 50%;
+        justify-content: flex-start;
+        margin-top: 0px;
+        gap: 3%;
+    }
+    
+    .fa-solid {
+        font-size: 13px;
+    }
+}

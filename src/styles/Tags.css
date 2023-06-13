@@ -22,3 +22,17 @@
     display: flex;
     align-items: center;
 }
+
+@media screen and (max-width: 375px) {
+    .tags-list {
+        margin: 0 0 8.5px 0;
+        gap: 3%;
+    }
+
+    .tag {
+        border-radius: 5px;
+        font-size: 10px;
+        padding: 2px 8%;
+        margin-bottom: 8px;
+    }  
+}

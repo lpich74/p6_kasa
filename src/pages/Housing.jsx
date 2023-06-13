@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom'
 import { housingProfiles } from '../datas/logements'
 import Tags from '../components/Tags'
 import Collapse from '../components/Collapse'
+import Stars from '../components/Stars'
 
 function Housing() {
   const { id } = useParams()
@@ -29,16 +30,17 @@ function Housing() {
             <span className='host-name'>{housing.host.name}</span>
             <img className='host-pic' src={housing.host.picture} alt={housing.host.name} height={64} width={64} />
           </div>
+          <Stars
+            rating={housing.rating}
+          />
         </div>
       </div>
       <div className='collapses-housing'>
           <Collapse
-            className='element-collapse-housing'
             title="Description"
             content={housing.description}
           />
           <Collapse
-            className='element-collapse-housing'
             title="Équipements"
             content={housing.equipments}
           />
