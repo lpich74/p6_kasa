@@ -3,11 +3,11 @@
     display: flex;
     justify-content: flex-end;
     margin-top: 27px;
-    gap: 10%;
 }
 
 .fa-solid {
     font-size: 24px;
+    margin-left: 15px;
 }
 
 @media screen and (max-width: 375px) {
@@ -20,5 +20,6 @@
     
     .fa-solid {
         font-size: 13px;
+        margin: 0;
     }
 }

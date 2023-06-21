@@ -1,10 +1,10 @@
-.banner {
+.banner-home {
     position: relative;
     margin: 23px 100px 0 100px;
     border-radius: 25px;
 }
 
-.banner-image {
+.banner-image-home {
     position: absolute;
     background-image: url('../assets/banner-image.jpg');
     background-size: cover;
@@ -17,7 +17,7 @@
     border-radius: 25px;
 }
 
-.catch-phrase {
+.catch-phrase-home {
     text-align: center;
     margin: 0;
     padding: 78px 10%;
@@ -29,7 +29,7 @@
     color: white;
 }
 
-.landscape {
+.banner-about {
     margin: 3px 100px 0 100px;
     border-radius: 25px;
     height: 223px;
@@ -40,23 +40,23 @@
 }
 
 @media screen and (max-width: 375px) {
-    .banner {
+    .banner-home {
         margin: 11px 20px 0px 20px;
         border-radius: 10px;
     }
 
-    .banner-image {
+    .banner-image-home {
         border-radius: 10px;
     }
 
-    .catch-phrase {
+    .catch-phrase-home {
         text-align: left;
         padding: 31px 102px 32px 16px;
         font-size: 24px;
         line-height: 100%;
     }
 
-    .landscape {
+    .banner-about {
         margin: 3px 19px 19px 19px;
         border-radius: 10px;
         height: 223px;

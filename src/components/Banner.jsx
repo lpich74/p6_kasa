@@ -1,19 +1,15 @@
 import React from 'react';
 import '../styles/Banner.css';
 
-function Banner({isHomePage}) {
-  if (isHomePage) {
-    return (
-      <div className='banner'>
-        <div className='banner-image'></div>
-        <h1 className='catch-phrase'>Chez vous, partout et ailleurs</h1>
-      </div>
-    )
-  } else {
-      return (
-        <div className='landscape'></div>
-      )  
-  }
+function Banner({page, text}) {
+  return (
+    <div className={"banner-" + page }>
+      <div className={"banner-image-" + page }></div>
+      {text && text.trim().length > 0 && (
+        <h1 className={"catch-phrase-" + page }>{text}</h1>
+      )}
+    </div>
+  )
 }
   
 export default Banner

@@ -1,46 +1,28 @@
 import '../styles/Collapse.css';
 import { useState } from 'react'
 
-function Collapse({title, content, isAboutPage}) {
+function Collapse({title, content, page }) {
     const [isOpen, setIsOpen] = useState(true)
 
     const toggleCollapse = () => {
         setIsOpen(!isOpen);
-      };
+    };
 
-    if (isAboutPage) {
-        return (
-            <div className="collapse">
-                <div className="collapse-header">
-                    <h2 className='collapse-title'>{title}</h2>
-                    <div className='collapse-vector' onClick={toggleCollapse} style={!isOpen ? { transform: 'rotate(-180deg)' } : {}}>
-                        <i className='fa-solid fa-chevron-up'></i>
-                    </div>
-                </div>
-                {!isOpen && (
-                    <div className="collapse-content">
-                        <p className='collapse-text'>{content}</p>
-                    </div>
-                )}
-            </div>
-            );
-    } else {
-        return (
-            <div className="housing-collapse">
-            <div className="housing-collapse-header">
-                <h2 className='housing-collapse-title'>{title}</h2>
-                <div className='housing-collapse-vector' onClick={toggleCollapse} style={!isOpen ? { transform: 'rotate(-180deg)' } : {}}>
-                    <i className='fa-solid fa-chevron-up'></i>
+    return (
+        <div className={"collapse collapse-" + page }>
+            <div className={"collapse-header collapse-header-" + page}>
+                <h2 className={"collapse-title collapse-title-" + page}>{title}</h2>
+                <div className="collapse-vector" onClick={toggleCollapse}>
+                    <i className={(!isOpen ? ' rotate180' : ' rotate0') +' fa-solid fa-chevron-up'}></i>
                 </div>
             </div>
             {!isOpen && (
-                <div className="housing-collapse-content">
-                    {content}
+                <div className={"collapse-content collapse-content-" + page}>
+                    <div className={"collapse-text collapse-text-" + page}>{content}</div>
                 </div>
             )}
         </div>
-        );
-    }
+    );
 }
 
 export default Collapse

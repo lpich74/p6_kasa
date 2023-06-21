@@ -7,13 +7,16 @@ import { Link } from 'react-router-dom';
 function Home() {
   return (
     <div className="App">
-      <Banner isHomePage={true} />
+      <Banner 
+        text="Chez vous, partout et ailleurs"
+        page="home"
+      />
       <section className='cards-wrapper'>
-        {housingProfiles.map((housing) => (
-          <Link className='card' key={`${housing.id}`} to={`/housing/${housing.id}`}>
+        {housingProfiles.map((housingData) => (
+          <Link className='card' key={`${housingData.id}`} to={`/housing/${housingData.id}`}>
             <Card
-                cover={housing.cover}
-                title={housing.title}
+                cover={housingData.cover}
+                title={housingData.title}
             />
           </Link>
         ))}

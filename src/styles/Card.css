@@ -18,7 +18,6 @@
 
 .card-image-background {
     position: absolute;
-    content: "";
     top: 0;
     left: 0;
     width: 100%;

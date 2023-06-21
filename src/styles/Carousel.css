@@ -1,0 +1,44 @@
+.carousel-nav {
+    position: relative;
+    height: 415px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.carousel-left, .carousel-right {
+    position: absolute;
+    width: 100px;
+    min-width: 100px;
+    z-index: 1;
+}
+
+.carousel-left-arr, .carousel-right-arr {
+    margin: auto;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 80px;
+    cursor: pointer;
+}
+
+.carousel-left {
+    left: 0;
+}
+
+.carousel-right {
+    right: 0;
+}
+
+.carousel-content {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    transition: all 1s linear;
+}
+
+.carousel-content-item {
+    height: 100%;
+    width: 100%;
+    min-width: 100%;
+    object-fit: cover;
+}
