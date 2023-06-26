@@ -31,7 +31,7 @@ function Carousel({carouselPictures}) {
     return (
         <div className="carousel-nav">
             <div className="carousel-left">
-              <i class="fa-solid fa-chevron-left" onClick={() => carouselNext(true)}></i>
+              <i className="fa-solid fa-chevron-left" onClick={() => carouselNext(true)}></i>
             </div>
   
             <div className="carousel-content" style={{transform:`translateX(${-100*showNum}%)`}}>
