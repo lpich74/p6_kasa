@@ -1,5 +1,5 @@
 import '../styles/Carousel.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 function Carousel({carouselPictures}) {
     const [showNum, setShowNum] = useState(0);
@@ -15,11 +15,23 @@ function Carousel({carouselPictures}) {
           setShowNum((showNum + 1) % carouselPictures.length);
         }
       };
+    
+    const currentPicture = showNum +1
+
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setShowNum((showNum + 1) % carouselPictures.length);
+      }, 8000);
+  
+      return () => {
+        clearInterval(interval);
+      };
+    }, [showNum, carouselPictures.length]);
 
     return (
         <div className="carousel-nav">
             <div className="carousel-left">
-                <span className="carousel-left-arr" onClick={() => carouselNext(true)}>&lt;</span>
+              <i class="fa-solid fa-chevron-left" onClick={() => carouselNext(true)}></i>
             </div>
   
             <div className="carousel-content" style={{transform:`translateX(${-100*showNum}%)`}}>
@@ -29,7 +41,11 @@ function Carousel({carouselPictures}) {
             </div>
   
             <div className="carousel-right">
-                <span className="carousel-right-arr" onClick={() => carouselNext()}>&gt;</span>
+              <i className="fa-solid fa-chevron-right" onClick={() => carouselNext()}></i>
+            </div>
+
+            <div className="carousel-counter">
+              {currentPicture}/{carouselPictures.length}
             </div>
         </div>
     )

@@ -7,17 +7,11 @@
 
 .carousel-left, .carousel-right {
     position: absolute;
+    top: 40%;
     width: 100px;
     min-width: 100px;
+    display: flex;
     z-index: 1;
-}
-
-.carousel-left-arr, .carousel-right-arr {
-    margin: auto;
-    color: #FFFFFF;
-    font-weight: 500;
-    font-size: 80px;
-    cursor: pointer;
 }
 
 .carousel-left {
@@ -26,6 +20,21 @@
 
 .carousel-right {
     right: 0;
+    justify-content: flex-end;
+}
+
+.fa-solid.fa-chevron-left, .fa-solid.fa-chevron-right {
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 78px;
+}
+
+.fa-solid.fa-chevron-left {
+    margin: 0 0 0 23.4px;
+}
+
+.fa-solid.fa-chevron-right {
+    margin: 0 23.4px 0 0;
 }
 
 .carousel-content {
@@ -41,4 +50,44 @@
     width: 100%;
     min-width: 100%;
     object-fit: cover;
+}
+
+.carousel-counter {
+    position: absolute;
+    bottom: 25px;
+    left: 48.95%;
+    color: #FFFFFF;
+    z-index: 1;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+}
+
+@media screen and (max-width: 375px) {
+    .carousel-nav {
+        height: 255px;
+        border-radius: 10px;
+    }
+
+    .carousel-left, .carousel-right {
+        top: 45%;
+    }
+
+    .fa-solid.fa-chevron-left, .fa-solid.fa-chevron-right {
+        font-size: 20px;
+    }
+    
+    .fa-solid.fa-chevron-left {
+        margin: 0 0 0 6px;
+    }
+    
+    .fa-solid.fa-chevron-right {
+        margin: 0 6px 0 0;
+    }
+
+    .carousel-counter {
+        display: none;
+    }
 }
