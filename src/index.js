@@ -53,7 +53,6 @@ const housingLoader = async ({ params }) => {
 //   </React.StrictMode>
 // );
 
-
 const router = createBrowserRouter(
   createRoutesFromElements([
      <Route

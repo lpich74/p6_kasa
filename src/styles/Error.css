@@ -4,17 +4,17 @@
     justify-content: center;
     align-items: center;
     color: #FF6060;
-    margin: 104px 0 139px 0;
+    margin: 0 0 9% 0;
 }
 
 .error-main {
     text-align: center;
-    margin-bottom: 139px;
+    margin-bottom: 7%;
 }
 
 .error-404 {
     margin-top: 0;
-    margin-bottom: 66px;
+    margin-bottom: 1%;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -28,6 +28,8 @@
     font-weight: 500;
     font-size: 36px;
     line-height: 142.6%;
+    display: flex;
+    align-items: flex-end;
 }
 
 .error-back {
@@ -57,17 +59,17 @@
 
 @media screen and (max-width: 375px) {
     .error-global {
-        margin: 97px 0 113px 0;
+        margin: 15% 0 22% 0;
     }
 
     .error-main {
         text-align: center;
-        margin-bottom: 113px;
+        margin-bottom: 19%;
     }
 
     .error-404 {
         margin-top: 0;
-        margin-bottom: 113px;
+        margin-bottom: 15%;
         font-size: 96px;
     }
 

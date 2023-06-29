@@ -10,6 +10,13 @@
     margin-left: 15px;
 }
 
+@media screen and (max-width: 710px) {
+    .fa-solid {
+        font-size: 20px;
+        margin-left: 8px;
+    }
+}
+
 @media screen and (max-width: 375px) {
     .starbox {
         width: 50%;
