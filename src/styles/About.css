@@ -1,11 +1,11 @@
 .collapse-set {
-    margin: 38px 100px;
+    margin: 38px 0;
     padding: 0 8%;
 }
 
 @media screen and (max-width: 375px) {
     .collapse-set {
-        margin: 19px;
+        margin: 19px 0;
         padding: 0;
     }
 }

@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     color: #FF6060;
-    margin: 104px 100px 139px 100px;
+    margin: 104px 0 139px 0;
 }
 
 .error-main {
@@ -41,9 +41,23 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 710px) {
+    .error-404 {
+        font-size: 150px;
+    }
+
+    .error-message {
+        font-size: 25px;
+    }
+
+    .error-back {
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 375px) {
     .error-global {
-        margin: 97px 20px 113px 20px;
+        margin: 97px 0 113px 0;
     }
 
     .error-main {

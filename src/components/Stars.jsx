@@ -13,7 +13,7 @@ function Stars({rating}) {
         }
       }
     
-      return <div className='starbox'>{stars}</div>;
+    return <div className='starbox'>{stars}</div>;
 }
 
 export default Stars

@@ -1,12 +1,16 @@
 import Header from './Header';
 import Footer from './Footer';
+import '../styles/Layout.css';
+
 
 const Layout = ({ children }) => {
   return (
-    <div style={{display: 'flex', flexDirection: 'column', minHeight: '100vh'}}>
-        <div style={{flex: 1}}>
+    <div className='header-main-footer'>
+        <div className='header-main'>
             <Header />
-            <main>{children}</main>
+            <main className='main-column'>
+              {children}
+            </main>
         </div>
       <Footer />
     </div>

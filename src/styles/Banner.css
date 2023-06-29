@@ -1,6 +1,6 @@
 .banner-home {
     position: relative;
-    margin: 23px 100px 0 100px;
+    margin: 23px 0 0 0;
     border-radius: 25px;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .banner-about {
-    margin: 3px 100px 0 100px;
+    margin: 3px 0 0 0;
     border-radius: 25px;
     height: 223px;
     background-image: url(../assets/landscape.jpg);
@@ -41,7 +41,7 @@
 
 @media screen and (max-width: 375px) {
     .banner-home {
-        margin: 11px 20px 0px 20px;
+        margin: 11px 0 0 0;
         border-radius: 10px;
     }
 
@@ -57,7 +57,7 @@
     }
 
     .banner-about {
-        margin: 3px 19px 19px 19px;
+        margin: 3px 0 19px 0;
         border-radius: 10px;
         height: 223px;
     }
