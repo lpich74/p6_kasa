@@ -1,13 +1,25 @@
 .cards-wrapper {
   margin: 43px 0 50px 0;
-  padding: 56px 40px 43px 40px;
+  padding: 56px 50px 56px 50px;
   background: #F7F7F7;
   border-radius: 25px;
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
-  gap: 3%;
+  gap: 5.75%;
   row-gap: 50px;
+}
+
+@media screen and (max-width: 921px) {
+  .cards-wrapper {
+    gap: 8%;
+    row-gap: 50px;
+  }
+}
+
+@media screen and (max-width: 592px) {
+  .cards-wrapper {
+    row-gap: 50px;
+  }
 }
 
 @media screen and (max-width: 375px) {

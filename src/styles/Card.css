@@ -2,7 +2,7 @@
     position: relative;
     border-radius: 10px;
     min-width: 180px;
-    width: 29%;
+    width: 29.5%;
     text-decoration: none;
     aspect-ratio: 1;
 }
@@ -43,6 +43,18 @@
     -webkit-line-clamp: 2;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 921px) {
+    .card {
+        width: 46%;
+    }
+}
+
+@media screen and (max-width: 592px) {
+    .card {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 375px) {
