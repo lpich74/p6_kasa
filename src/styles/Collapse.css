@@ -92,6 +92,12 @@
     overflow: auto;
 }
 
+@media screen and (max-width: 710px) {
+    .collapse-housing {
+        min-width: 47%;
+    }
+}
+
 @media screen and (max-width: 375px) {
     .collapse {
         display: flex;
