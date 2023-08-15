@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } from 'react-router-dom';
+import { createHashRouter, createRoutesFromElements, RouterProvider, Route } from 'react-router-dom';
 import './index.css';
 import Layout from './components/Layout';
 import Home from './pages/Home';
@@ -53,7 +53,7 @@ const housingLoader = async ({ params }) => {
 //   </React.StrictMode>
 // );
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements([
      <Route
       path="/"
